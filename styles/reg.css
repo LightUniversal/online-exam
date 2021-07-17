@@ -1,0 +1,94 @@
+*   {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body    {
+    background-color: rgba(221, 207, 207, 0.1);
+}
+.container  {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(221, 207, 207, 0.1);
+}
+form    {
+    position: relative;
+}
+.profile    {
+    width: 90px;
+    border-radius: 100%;
+    height: 90px;
+    text-align: center;
+    box-shadow: 0.2px 0.2px 0.3px pink;
+    font-size: 20px;
+    background-color: red;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+    left: 45%;
+}
+.profile > p {
+    position: absolute;
+    left: 29px;
+    font-weight: 600;
+    top: 29px;
+    color: white;
+    font-size: 26px;
+    text-shadow: 0.3px 0.3px 0.4px #fff;
+}
+label   {
+    display: block;
+    font-size: 18px;
+    color: gray;
+    margin-top: 10px;
+    margin-left:10%;
+}
+label + input   {
+    width: 80%;
+    padding: 10px;
+    box-shadow:0.2px .56px .9px rgba(36, 33, 33, 0.5);
+    border: none;
+    display:block;
+    margin: 0 auto;
+    border-radius: 5px;
+    outline:none;
+}
+/* input:focus  {
+    border: thin solid aqua;
+} */
+.submit {
+    position:relative;
+    /* right: 10%; */
+    padding-bottom: 10%;
+}
+form input[type="submit"]   {
+    padding: 10px 10px;
+    background-color: rgb(241, 88, 68);
+    color: azure;
+    border-radius: 5px;
+    top: 10px;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    position: absolute;
+    right: 10%;
+}
+
+.valid  {
+    border:aqua solid 2px;
+    letter-spacing: 1px;
+}
+.invalid    {
+    border:crimson solid 2px;
+    letter-spacing: 1px;
+}
+input[type="password"] + span, input[type="password"] + span + span    {
+    position: absolute;
+    top: 122px;
+    right:11%;
+    visibility: hidden;
+    /* visibility: show; */
+}
